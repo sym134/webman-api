@@ -1,5 +1,6 @@
 {
-  "name": "jizhi/api",
+  "name": "jizhi/api-webman",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "sym",
@@ -9,7 +10,7 @@
   ],
   "type": "library",
   "license": "MIT",
-  "description": "Webman plugin jizhi/api",
+  "description": "Webman plugin jizhi/api-webman",
   "require": {
     "shopwwi/webman-filesystem": "^1.1"
   },
