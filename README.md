@@ -7,7 +7,7 @@ token使用shopwwi的包
 
 ### 安装
 ```shell
-    composer require jizhi/admin
+    composer require jizhi/api-webman
 ```
 
 
