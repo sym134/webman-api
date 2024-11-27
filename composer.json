@@ -1,0 +1,21 @@
+{
+  "name": "jizhi/api",
+  "authors": [
+    {
+      "name": "sym",
+      "email": "symok@qq.com",
+      "homepage": "https://github.com/sym134"
+    }
+  ],
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin jizhi/api",
+  "require": {
+    "shopwwi/webman-filesystem": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jizhi\\Api\\": "src"
+    }
+  }
+}
