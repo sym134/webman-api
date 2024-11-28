@@ -22,6 +22,6 @@ abstract class ApiController
      *
      * @var array
      */
-    public array $noNeedLogin = []; // ['index', …… ]
+    protected array $noNeedLogin = []; // 方法名 ['index', …… ]
 
 }
