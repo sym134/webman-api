@@ -1,9 +1,9 @@
 <?php
 
-namespace Jizhi\Api\controller;
+namespace jizhi\api\controller;
 
 
-use Jizhi\Api\support\trait\JsonResponseTrait;
+use jizhi\api\support\trait\JsonResponseTrait;
 
 /**
  *

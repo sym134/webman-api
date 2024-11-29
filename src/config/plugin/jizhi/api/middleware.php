@@ -2,8 +2,8 @@
 
 return [
     'api' => [
-        \Jizhi\Api\middleware\ConnectionDatabase::class,
-        \Jizhi\Api\middleware\ApiAuthMiddleware::class,
-        \Jizhi\Api\middleware\ParameterConverterMiddleware::class,
+        \jizhi\api\middleware\ConnectionDatabase::class,
+        \jizhi\api\middleware\ApiAuthMiddleware::class,
+        \jizhi\api\middleware\ParameterConverterMiddleware::class,
     ],
 ];

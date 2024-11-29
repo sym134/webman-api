@@ -1,6 +1,6 @@
 <?php
 
-namespace Jizhi\Api\middleware;
+namespace jizhi\api\middleware;
 
 
 use Webman\Http\Request;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Jizhi\Api\middleware;
+namespace jizhi\api\middleware;
 
 use ReflectionClass;
 use Webman\Http\Request;
 use Webman\Http\Response;
 use Webman\MiddlewareInterface;
-use Jizhi\Api\services\JsonResponse;
+use jizhi\api\services\JsonResponse;
 use Shopwwi\WebmanAuth\Facade\Auth;
 
 class ApiAuthMiddleware implements MiddlewareInterface

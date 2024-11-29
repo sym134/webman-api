@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Jizhi\\Api\\": "src"
+      "jizhi\\api\\": "src"
     }
   }
 }

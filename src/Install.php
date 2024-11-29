@@ -1,5 +1,5 @@
 <?php
-namespace Jizhi\Api;
+namespace jizhi\api;
 
 class Install
 {
