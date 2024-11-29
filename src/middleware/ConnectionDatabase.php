@@ -6,8 +6,7 @@ use Webman\Http\Request;
 use Webman\Http\Response;
 use Webman\MiddlewareInterface;
 
-// use plugin\saas\model\TenantModel;
-use Jizhi\Admin\support\SqlRecord;
+use jizhi\admin\support\SqlRecord;
 
 /**
  * 连接数据库
@@ -27,12 +26,6 @@ class ConnectionDatabase implements MiddlewareInterface
                 SqlRecord::$sql = []; // 清空sql记录
             }
         }
-        // $request->header('x-site-domain')
-        // $domain = $request->host(true)?? 'https://newtrain.tinywan.com';
-        // $platform = TenantModel::where('domain', $domain)->field('id, domain, website')->findOrEmpty();
-        // if (!$platform->isEmpty()) {
-        //     $request->tenant = $platform['website'];
-        // }
         return $handler($request);
     }
 

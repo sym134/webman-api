@@ -14,7 +14,7 @@ use Webman\MiddlewareInterface;
  *  2. 将后端响应参数的下划线命名转换为前端的驼峰命名
  *
  * ParameterConverterMiddleware
- * Jizhi\Admin\middleware
+ * jizhi\api\middleware
  *
  * Author:sym
  * Date:2024/11/27 17:44
