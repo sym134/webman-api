@@ -1,17 +1,19 @@
 jizhi-api-webman
 ==================
 简单api
-token使用shopwwi的包
+token使用shopwwi的包修改
+
 支持请求post\get驼峰转下划线
+
 支持响应下划线自动转驼峰
 
 ### 安装
 ```shell
-    composer require jizhi/api-webman
+    composer require jizhi/webman-api
 ```
 
 
-### 配置auth config/plugin/shopwwi/auth/app.php
+### 配置auth config/plugin/jizhi/auth/app.php
 
 ```php
  return [

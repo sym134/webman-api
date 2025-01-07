@@ -1,6 +1,9 @@
 {
   "name": "jizhi/webman-api",
+  "description": "Webman plugin jizhi/webman-api",
   "version": "1.0.1",
+  "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "sym",
@@ -8,9 +11,6 @@
       "homepage": "https://github.com/sym134"
     }
   ],
-  "type": "library",
-  "license": "MIT",
-  "description": "Webman plugin jizhi/webman-api",
   "require": {
     "php": ">=8.0",
     "illuminate/database": "*",
