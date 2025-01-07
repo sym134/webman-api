@@ -1,6 +1,6 @@
 <?php
 
-namespace jizhi\api\middleware;
+namespace Api\middleware;
 
 
 use Webman\Http\Request;
@@ -14,13 +14,13 @@ use Webman\MiddlewareInterface;
  *  2. 将后端响应参数的下划线命名转换为前端的驼峰命名
  *
  * ParameterConverterMiddleware
- * jizhi\api\middleware
+ * Api\middleware
  *
  * Author:sym
  * Date:2024/11/27 17:44
  * Company:极智科技
  */
-class ParameterConverterMiddleware implements MiddlewareInterface
+class ParameterConverter implements MiddlewareInterface
 {
     public function process(Request $request, callable $handler): Response
     {

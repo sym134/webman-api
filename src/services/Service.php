@@ -1,6 +1,6 @@
 <?php
 
-namespace jizhi\api\services;
+namespace Api\services;
 
 class Service
 {

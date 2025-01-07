@@ -1,9 +1,9 @@
 <?php
 
-namespace jizhi\api\controller;
+namespace Api\controller;
 
 
-use jizhi\api\support\trait\JsonResponseTrait;
+use Api\support\trait\JsonResponseTrait;
 
 /**
  *
@@ -22,6 +22,6 @@ abstract class ApiController
      *
      * @var array
      */
-    protected array $noNeedLogin = []; // 方法名 ['index', …… ]
+    protected static array $noNeedLogin = []; // 方法名 ['index', …… ]
 
 }

@@ -1,5 +1,5 @@
 {
-  "name": "jizhi/api-webman",
+  "name": "jizhi/webman-api",
   "version": "1.0.1",
   "authors": [
     {
@@ -10,13 +10,25 @@
   ],
   "type": "library",
   "license": "MIT",
-  "description": "Webman plugin jizhi/api-webman",
+  "description": "Webman plugin jizhi/webman-api",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "D:\\develop\\project\\composer-packge\\jizhi\\webman-auth"
+    }
+  ],
   "require": {
-    "shopwwi/webman-filesystem": "^1.1"
+    "php": ">=8.0",
+    "illuminate/database": "*",
+    "jizhi/webman-auth": "dev-main"
   },
   "autoload": {
     "psr-4": {
-      "jizhi\\api\\": "src"
+      "Api\\": "src/"
     }
-  }
+  },
+  "require-dev": {
+    "workerman/webman-framework": "^1.6"
+  },
+  "minimum-stability": "dev"
 }

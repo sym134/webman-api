@@ -1,6 +1,6 @@
 <?php
 
-namespace jizhi\api\support\trait;
+namespace Api\support\trait;
 
 use Webman\Http\Response;
 use jizhi\admin\support\SqlRecord;

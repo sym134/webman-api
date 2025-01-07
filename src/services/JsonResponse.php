@@ -1,8 +1,8 @@
 <?php
 
-namespace jizhi\api\services;
+namespace Api\services;
 
-use jizhi\api\support\trait\JsonResponseTrait;
+use Api\support\trait\JsonResponseTrait;
 
 class JsonResponse extends Service
 {

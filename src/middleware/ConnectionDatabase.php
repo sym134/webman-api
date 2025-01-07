@@ -1,12 +1,11 @@
 <?php
 
-namespace jizhi\api\middleware;
+namespace Api\middleware;
 
+use Api\support\SqlRecord;
 use Webman\Http\Request;
 use Webman\Http\Response;
 use Webman\MiddlewareInterface;
-
-use jizhi\admin\support\SqlRecord;
 
 /**
  * 连接数据库
@@ -21,7 +20,7 @@ class ConnectionDatabase implements MiddlewareInterface
 {
     public function process(Request $request, callable $handler): Response
     {
-        if (strpos($request->route->getPath(), '/' . config('plugin.jizhi.admin.admin.route.prefix')) === 0) {
+        if (str_starts_with($request->route->getPath(), '/' . config('plugin.jizhi.admin.admin.route.prefix'))) {
             if (config('app.debug')) {
                 SqlRecord::$sql = []; // 清空sql记录
             }
