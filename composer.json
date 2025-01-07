@@ -11,12 +11,6 @@
   "type": "library",
   "license": "MIT",
   "description": "Webman plugin jizhi/webman-api",
-  "repositories": [
-    {
-      "type": "path",
-      "url": "D:\\develop\\project\\composer-packge\\jizhi\\webman-auth"
-    }
-  ],
   "require": {
     "php": ">=8.0",
     "illuminate/database": "*",
