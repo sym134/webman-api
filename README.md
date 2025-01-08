@@ -1,7 +1,6 @@
-jizhi-api-webman
+jizhi-webman-api
 ==================
-简单api
-token使用shopwwi的包修改
+简单api token使用shopwwi的包修改
 
 支持请求post\get驼峰转下划线
 
@@ -34,5 +33,14 @@ php webman api:install
     // ........
 ```
 
-### api接口打印sql
-.env配置 API_SQL_MONITOR_ENABLE=true
+### .env配置
+```dotenv
+#sql打印
+API_SQL_MONITOR_ENABLE=true
+#请求日志
+API_REQUEST_LOG_ENABLE=true
+# 请求换下划线
+API_CONVERT_REQUEST_NAME_ENABLE=false
+# 响应转驼峰
+API_CONVERT_RESPONSE_NAME_ENABLE=false
+```
