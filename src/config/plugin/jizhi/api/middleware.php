@@ -2,8 +2,8 @@
 
 return [
     'api' => [
-        \Api\middleware\ConnectionDatabase::class,
-        \Api\middleware\Authorization::class,
+        \Api\middleware\Authentication::class,
         \Api\middleware\ParameterConverter::class,
+        \Api\middleware\RequestLog::class,
     ],
 ];

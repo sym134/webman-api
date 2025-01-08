@@ -13,16 +13,11 @@
   ],
   "require": {
     "php": ">=8.0",
-    "illuminate/database": "*",
-    "jizhi/webman-auth": "dev-main"
+    "illuminate/database": ">=9.0"
   },
   "autoload": {
     "psr-4": {
       "Api\\": "src/"
     }
-  },
-  "require-dev": {
-    "workerman/webman-framework": "^1.6"
-  },
-  "minimum-stability": "dev"
+  }
 }

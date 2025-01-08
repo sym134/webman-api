@@ -12,6 +12,10 @@ token使用shopwwi的包修改
     composer require jizhi/webman-api
 ```
 
+### 安装请求记录表
+```bash
+php webman api:install
+```
 
 ### 配置auth config/plugin/jizhi/auth/app.php
 
@@ -19,7 +23,7 @@ token使用shopwwi的包修改
  return [
       // ........
      'guard' => [
-         // 添加 admin
+         // 添加 api
          'api' => [
              'key' => 'id',
              'field' => ['id','name','email','mobile'], //设置允许写入扩展中的字段
@@ -29,3 +33,6 @@ token使用shopwwi的包修改
      ],
     // ........
 ```
+
+### api接口打印sql
+.env配置 API_SQL_MONITOR_ENABLE=true

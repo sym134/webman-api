@@ -2,6 +2,9 @@
 
 namespace Api;
 
+use Illuminate\Database\Schema\Blueprint;
+use support\Db;
+
 class Install
 {
     const WEBMAN_PLUGIN = true;
@@ -71,5 +74,4 @@ class Install
             remove_dir($path);
         }
     }
-
 }

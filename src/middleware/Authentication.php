@@ -8,7 +8,7 @@ use Webman\MiddlewareInterface;
 use WebmanAuth\exception\JwtTokenException;
 use WebmanAuth\facade\Auth;
 
-class Authorization implements MiddlewareInterface
+class Authentication implements MiddlewareInterface
 {
     public function process(Request $request, callable $handler): Response
     {

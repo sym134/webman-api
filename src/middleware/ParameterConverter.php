@@ -24,13 +24,13 @@ class ParameterConverter implements MiddlewareInterface
 {
     public function process(Request $request, callable $handler): Response
     {
-        if (config('plugin.jizhi.api.app.enable_convert_request_name') === true) {
+        if (config('plugin.jizhi.api.app.convert_request_name_enable') === true) {
             $this->convertRequestName($request);
         }
 
         $response = $handler($request);
 
-        if (config('plugin.jizhi.api.app.enable_convert_response_name') === true) {
+        if (config('plugin.jizhi.api.app.convert_response_name_enable') === true) {
             $this->convertResponseName($response);
         }
 

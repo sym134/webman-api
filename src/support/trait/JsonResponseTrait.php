@@ -2,8 +2,8 @@
 
 namespace Api\support\trait;
 
+use Api\support\SqlRecord;
 use Webman\Http\Response;
-use jizhi\admin\support\SqlRecord;
 
 trait JsonResponseTrait
 {
@@ -12,9 +12,9 @@ trait JsonResponseTrait
 
     /**
      * @param string $msg
-     * @param mixed  $data
-     * @param int    $code
-     * @param int    $show
+     * @param mixed $data
+     * @param int $code
+     * @param int $show
      *
      * @return  \support\Response
      */
@@ -27,9 +27,9 @@ trait JsonResponseTrait
     /**
      *
      * @param string $msg
-     * @param mixed  $data
-     * @param int    $code
-     * @param int    $show
+     * @param mixed $data
+     * @param int $code
+     * @param int $show
      *
      * @return Response
      *
@@ -50,6 +50,7 @@ trait JsonResponseTrait
             $additionalData['_debug'] = [
                 'sql' => SqlRecord::$sql,
             ];
+            SqlRecord::$sql = [];
         }
         return new Response($this->status_code, $this->headers, json_encode(array_merge($additionalData, $data), JSON_UNESCAPED_UNICODE));
     }
