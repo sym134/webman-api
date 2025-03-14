@@ -3,7 +3,7 @@
 namespace Api\support\trait;
 
 use Api\support\SqlRecord;
-use Webman\Http\Response;
+use support\Response;
 
 trait JsonResponseTrait
 {
@@ -16,7 +16,7 @@ trait JsonResponseTrait
      * @param int $code
      * @param int $show
      *
-     * @return  \support\Response
+     * @return  Response
      */
     public function fail(string $msg = 'Service error', mixed $data = '', int $code = 1, int $show = 1): Response
     {
@@ -26,10 +26,10 @@ trait JsonResponseTrait
 
     /**
      *
-     * @param string $msg
      * @param mixed $data
      * @param int $code
      * @param int $show
+     * @param string $msg
      *
      * @return Response
      *
@@ -37,7 +37,7 @@ trait JsonResponseTrait
      * Date:2024/11/27 21:58
      * Company:极智科技
      */
-    public function success(string $msg = '', mixed $data = '', int $code = 0, int $show = 0): Response
+    public function success(mixed $data = '', int $code = 0, int $show = 0,string $msg = '', ): Response
     {
         $data = compact('code', 'show', 'msg', 'data');
         return $this->json($data);
