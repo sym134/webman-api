@@ -26,7 +26,7 @@ class Authentication implements MiddlewareInterface
         }
 
         // 如果不在 noNeedLogin 中，则需要验证 token
-        if (is_null(Auth::guard('api')->user())) {
+        if (is_null(Auth::guard('api')->user(true))) {
             throw new JwtTokenException('Unauthenticated.', 401);
         }
 

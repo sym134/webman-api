@@ -104,13 +104,13 @@ class ParameterConverter implements MiddlewareInterface
      *
      * @param $arr
      *
-     * @return array|string|null
+     * @return mixed
      *
      * Author:sym
      * Date:2024/11/27 18:18
      * Company:极智科技
      */
-    private function recursiveConvertNameToCamel($arr): array|string|null
+    private function recursiveConvertNameToCamel($arr): mixed
     {
         if (!is_array($arr)) {
             return $arr;
