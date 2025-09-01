@@ -37,7 +37,7 @@ trait JsonResponseTrait
      * Date:2024/11/27 21:58
      * Company:极智科技
      */
-    public function success(mixed $data = '', int $code = 0, int $show = 0,string $msg = '', ): Response
+    public function success(mixed $data = '', int $code = 0, int $show = 0, string $msg = ''): Response
     {
         $data = compact('code', 'show', 'msg', 'data');
         return $this->json($data);
@@ -62,7 +62,7 @@ trait JsonResponseTrait
      */
     public function successMessage(string $message = ''): Response
     {
-        return $this->success($message);
+        return $this->success([], 0, 0, $message);
     }
 
     public function setHeader(string $key, string $value): static
